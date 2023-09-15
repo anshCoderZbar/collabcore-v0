@@ -1,0 +1,80 @@
+/* layout */
+.web_layout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 110px 1fr;
+}
+/* layout */
+
+.dashboard_sidebar {
+  background-color: #fafafa;
+  height: 100vh;
+  width: 350px;
+  padding: 25px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+}
+.logo img {
+  width: 230px;
+  margin: 20px 0;
+}
+.side_row {
+  padding: 25px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.nav-links p {
+  color: #252525;
+  margin: 15px 10px;
+}
+.nav-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+.icon {
+  font-size: 35px;
+}
+.nav-links ul li {
+  padding: 8px 19px;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #464646;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  top: 2px;
+}
+
+.side_active {
+  background-color: #004fe9;
+  color: #fff !important;
+}
+.side_active a {
+  color: #fff !important;
+}
+
+.side_sec {
+  margin-top: 50px;
+}
+.side_btn {
+  border: none;
+  background-color: transparent;
+  color: #464646;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  top: 2px;
+}
+
+.header {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
