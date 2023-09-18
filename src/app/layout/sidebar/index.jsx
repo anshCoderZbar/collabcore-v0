@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { SidebarData } from "app/mock/sidebar";
@@ -7,10 +7,53 @@ import logo from "app/assets/logo.png";
 import { CgDarkMode } from "react-icons/cg";
 import { TbLogout } from "react-icons/tb";
 import { CiSettings } from "react-icons/ci";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 export const Sidebar = () => {
+  const [sidebarActive, setSidebarActive] = useState(false);
+  const setDark = () => {
+    localStorage.setItem("theme", "dark");
+    document.documentElement.setAttribute("data-applied-mode", "dark");
+  };
+  const setLight = () => {
+    localStorage.setItem("theme", "light");
+    document.documentElement.setAttribute("data-applied-mode", "light");
+  };
+
+  useEffect(() => {
+    const getTheme = localStorage.getItem("theme");
+    if (getTheme === "light") {
+      setLight();
+    } else if (getTheme === "dark") {
+      setDark();
+    } else {
+      setLight();
+    }
+  }, []);
+
+  const changeTheme = (e) => {
+    const currentMode =
+      document.documentElement.getAttribute("data-applied-mode");
+
+    if (currentMode === "light") {
+      setDark();
+    } else if (currentMode === "dark") {
+      setLight();
+    } else {
+      setLight();
+    }
+  };
+
   return (
-    <div className="dashboard_sidebar">
+    <div
+      className={`dashboard_sidebar ${sidebarActive ? "dashboard_active" : ""}`}
+    >
+      <div
+        className="menu_icon"
+        onClick={() => setSidebarActive(!sidebarActive)}
+      >
+        <MdOutlineKeyboardArrowLeft />
+      </div>
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
@@ -37,7 +80,10 @@ export const Sidebar = () => {
         <ul className="nav-items">
           <p>Preferences</p>
           <li>
-            <div className="d-flex gap-2 align-items-center">
+            <div
+              className="d-flex gap-2 align-items-center"
+              onClick={changeTheme}
+            >
               <div className="icon">
                 <CgDarkMode />
               </div>

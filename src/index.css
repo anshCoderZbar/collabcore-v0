@@ -6,3 +6,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root[data-applied-mode="light"] {
+  color-scheme: light;
+  --main-color: black;
+  --background: #fafafa;
+}
+:root[data-applied-mode="dark"] {
+  color-scheme: dark;
+  --main-color: white;
+  --background: #000;
+}
