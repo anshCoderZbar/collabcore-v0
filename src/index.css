@@ -9,11 +9,44 @@
 
 :root[data-applied-mode="light"] {
   color-scheme: light;
-  --main-color: black;
-  --background: #fafafa;
+  --main-color: #000;
+  --main-bg-color: #fff;
+  --green-100: #ebfdf3;
+  --green-300: #b0f0c9;
+  --green-400: #05ab5d;
+  --green-500: #14b068;
+  --blue-500: #004fe9;
+  --blue-600: #443bff;
+  --blue-900: #3f4660;
+  --gray-100: #fafafa;
+  --gray-200: #dddddd;
+  --gray-300: #9e9e9e;
+  --gray-400: #9f9f9f;
+  --gray-500: #a9a9a9;
+  --gray-800: #464646;
+  --gray-900: #252525;
 }
 :root[data-applied-mode="dark"] {
   color-scheme: dark;
-  --main-color: white;
-  --background: #000;
+  --main-color: #fff;
+  --main-bg-color: #2b2b2b;
+  --green-100: #025728;
+  --green-300: #137639;
+  --green-400: #05ab5d;
+  --green-500: #71e2ad;
+  --blue-500: #3f7df9;
+  --blue-600: #655dffd4;
+  --blue-900: #bcbdc4;
+  --gray-100: #2b2b2b;
+  --gray-200: #3e3d3d;
+  --gray-300: #b3afaf;
+  --gray-400: #b9b3b3;
+  --gray-500: #cfcccc;
+  --gray-800: #ddd9d9;
+  --gray-900: #d8d4d4;
+
+  /* --primary-color: white;
+  --sidebarsecondary-color: ;
+  -active-bg: #26488b;
+  --background: #000; */
 }
