@@ -1,0 +1,80 @@
+.project_dashboard {
+  padding: 15px;
+}
+
+.top_head h2 {
+  color: var(--gray-300);
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+.top_head a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.page_heading h1 {
+  margin: 25px 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.dashboard_head_card {
+  border: 2px solid var(--gray-200);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card_top {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.card_text h3 {
+  color: var(--main-color);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card_text p {
+  color: var(--main-color);
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.sub_details {
+  margin: 10px 0;
+}
+.card_icon {
+  font-size: 20px;
+  color: var(--green-400) !important;
+}
+.detail_data p {
+  color: var(--gray-300);
+  margin: 0;
+}
+.detail_data p span {
+  color: var(--green-400);
+}
+
+.card_bottom {
+  background-color: var(--gray-100);
+  padding: 15px 25px;
+}
+.card_bottom p {
+  color: var(--blue-900);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+.card_bottom button {
+  background-color: transparent;
+  border: none;
+  color: var(--blue-500);
+  font-weight: 500;
+  font-size: 15px;
+}

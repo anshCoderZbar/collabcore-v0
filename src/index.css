@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 :root[data-applied-mode="light"] {
   color-scheme: light;
   --main-color: #000;
@@ -32,21 +25,27 @@
   --main-bg-color: #2b2b2b;
   --green-100: #025728;
   --green-300: #137639;
-  --green-400: #05ab5d;
+  --green-400: #10af65;
   --green-500: #71e2ad;
   --blue-500: #3f7df9;
   --blue-600: #655dffd4;
   --blue-900: #bcbdc4;
   --gray-100: #2b2b2b;
   --gray-200: #3e3d3d;
-  --gray-300: #b3afaf;
+  --gray-300: #ebebeb;
   --gray-400: #b9b3b3;
   --gray-500: #cfcccc;
   --gray-800: #ddd9d9;
   --gray-900: #d8d4d4;
+}
 
-  /* --primary-color: white;
-  --sidebarsecondary-color: ;
-  -active-bg: #26488b;
-  --background: #000; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  background-color: var(--main-bg-color) !important;
 }
