@@ -60,9 +60,10 @@ export const Sidebar = () => {
       <div className="nav-links">
         <ul className="nav-items">
           <p>General</p>
-          {SidebarData?.map((menu) => {
+          {SidebarData?.map((menu, i) => {
             return (
               <li
+                key={i}
                 className={`${
                   window?.location?.pathname === menu?.slug ? "side_active" : ""
                 }`}

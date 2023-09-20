@@ -20,21 +20,21 @@ export const Header = () => {
       </div>
       <div>
         <div className="d-flex align-items-center gap-2">
-          <div class="img-box">
+          <div className="img-box">
             <img
               src="https://i.postimg.cc/BvNYhMHS/user-img.jpg"
               alt="some user image"
             />
           </div>
-          <div class="profile" onClick={() => setMenuToggle(!menuToggle)}>
-            <div class="user">
+          <div className="profile" onClick={() => setMenuToggle(!menuToggle)}>
+            <div className="user">
               <h3>nicolelopez</h3>
               <p>Nicole Lopez</p>
             </div>
           </div>
         </div>
 
-        <div class={`menu ${menuToggle ? "dropdown_active" : ""}`}>
+        <div className={`menu ${menuToggle ? "dropdown_active" : ""}`}>
           <ul>
             <li>
               <a href="#">Profile</a>
