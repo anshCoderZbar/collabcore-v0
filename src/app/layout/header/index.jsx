@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
+import { GoBell } from "react-icons/go";
+
+import user from "app/assets/user-img.jpg";
 
 export const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -18,13 +21,13 @@ export const Header = () => {
           <AiOutlineSearch />
         </div>
       </div>
+      <div className="bell_icon">
+        <GoBell />
+      </div>
       <div>
         <div className="d-flex align-items-center gap-2">
           <div className="img-box">
-            <img
-              src="https://i.postimg.cc/BvNYhMHS/user-img.jpg"
-              alt="some user image"
-            />
+            <img src={user} alt="some user image" />
           </div>
           <div className="profile" onClick={() => setMenuToggle(!menuToggle)}>
             <div className="user">

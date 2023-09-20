@@ -1,3 +1,4 @@
+import { Table } from "app/common/projects/Table";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -14,6 +15,7 @@ export const Projects = () => {
         <div className="project_heading">
           <h1>Projects</h1>
         </div>
+        <Table />
       </div>
     </div>
   );

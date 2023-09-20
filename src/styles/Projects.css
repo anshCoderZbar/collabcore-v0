@@ -20,3 +20,46 @@
   font-weight: 600;
   color: var(--main-color);
 }
+
+.rdt_TableHeadRow {
+  background-color: var(--gray-100) !important;
+  color: var(--gray-800) !important;
+  font-size: 15px;
+  text-align: center;
+}
+
+.rdt_TableRow {
+  padding: 20px 0;
+}
+
+.rdt_TableRow:hover {
+  background-color: var(--gray-100) !important;
+}
+.rdt_TableCell {
+  font-size: 15px !important;
+}
+
+.company_table .table_para {
+  margin-bottom: 1px;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+}
+.table_sub_para {
+  margin-bottom: 1px;
+  font-size: 15px;
+  color: var(--blue-900);
+}
+
+.button_green {
+  background-color: var(--green-300);
+  border: 2px solid var(--green-500);
+  padding: 1px 10px;
+  border-radius: 25px;
+  color: var(--green-700);
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.button_green span {
+  margin-right: 5px;
+}
