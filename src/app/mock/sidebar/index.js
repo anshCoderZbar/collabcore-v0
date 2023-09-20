@@ -16,7 +16,7 @@ export const SidebarData = [
   {
     id: 3,
     name: "messages",
-    slug: "#",
+    slug: "/messages",
     icon: <BiGridAlt />,
   },
   {

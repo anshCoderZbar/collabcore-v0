@@ -5,6 +5,8 @@ import { PrivateRoutes } from "./private";
 import { Dashboard } from "pages/dashboard";
 import { PublicRoute } from "./public";
 import { Login } from "pages/login";
+import { Chat } from "pages/chat";
+import { Projects } from "pages/projects";
 
 export const AllRoutes = (props) => {
   return (
@@ -16,6 +18,22 @@ export const AllRoutes = (props) => {
           element={
             <PrivateRoutes>
               <Dashboard />
+            </PrivateRoutes>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <PrivateRoutes>
+              <Projects />
+            </PrivateRoutes>
+          }
+        />
+        <Route
+          path="/messages"
+          element={
+            <PrivateRoutes>
+              <Chat />
             </PrivateRoutes>
           }
         />
