@@ -11,6 +11,7 @@
   --green-700: #197e53;
   --blue-500: #004fe9;
   --blue-600: #443bff;
+  --blue-700: #204f99;
   --blue-900: #3f4660;
   --gray-50: #eaeaea;
   --gray-100: #fafafa;
@@ -50,4 +51,8 @@
 html,
 body {
   background-color: var(--main-bg-color) !important;
+}
+
+.container {
+  max-width: 1500px !important;
 }

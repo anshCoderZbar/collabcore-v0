@@ -16,7 +16,9 @@ export const Table = () => {
       pointerOnHover={true}
       responsive={true}
       paginationPerPage={5}
-      onRowClicked={(e) => navigate(`/projects/${e.name}`)}
+      onRowClicked={(e) =>
+        navigate(`/projects/${e?.name.replaceAll(" ", "_")}`)
+      }
     />
   );
 };

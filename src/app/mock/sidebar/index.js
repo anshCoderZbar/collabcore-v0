@@ -22,7 +22,7 @@ export const SidebarData = [
   {
     id: 4,
     name: "calander",
-    slug: "#",
+    slug: "/calander",
     icon: <BiGridAlt />,
   },
   {

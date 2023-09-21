@@ -8,6 +8,7 @@ import { Login } from "pages/login";
 import { Chat } from "pages/chat";
 import { Projects } from "pages/projects";
 import { SingleProject } from "pages/projects/SingleProject";
+import { Calander } from "pages/calander";
 
 export const AllRoutes = (props) => {
   return (
@@ -43,6 +44,14 @@ export const AllRoutes = (props) => {
           element={
             <PrivateRoutes>
               <Chat />
+            </PrivateRoutes>
+          }
+        />
+        <Route
+          path="/calander"
+          element={
+            <PrivateRoutes>
+              <Calander />
             </PrivateRoutes>
           }
         />
