@@ -82,19 +82,22 @@ export const ChatRoom = () => {
                     post.
                   </p>
                   <p>This tangerine top would look amazing!</p>
+                  <div className="msg_img">
+                    <h3>Satin Cowl Neck Crop Top</h3>
+                    <a href="#" target="_blank" className="d-block">
+                      forever21.com/us/2000468243.html...
+                    </a>
+                    <img
+                      src={require("app/assets/chat-message.png")}
+                      alt="message-image"
+                    />
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
-        {/* input */}
-      </div>
-    </div>
-  );
-};
-
-{
-  /* <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
+        <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
           <div class="custom-form__send-wrapper">
             <input
               type="text"
@@ -146,5 +149,8 @@ export const ChatRoom = () => {
               </svg>
             </button>
           </div>
-        </div> */
-}
+        </div>
+      </div>
+    </div>
+  );
+};
