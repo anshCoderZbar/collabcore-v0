@@ -3,18 +3,23 @@ import React from "react";
 
 export const Users = () => {
   return (
-    <ul class="messages-page__list p-0">
-      {AllUsers?.map((el) => {
+    <ul className="messages-page__list p-0">
+      {AllUsers?.map((el, i) => {
         return (
-          <li class="messaging-member messaging-member--new messaging-member--online">
-            <div class="messaging-member__wrapper">
-              <div class="messaging-member__avatar">
+          <li
+            key={i}
+            className="messaging-member messaging-member--new messaging-member--online"
+          >
+            <div className="messaging-member__wrapper">
+              <div className="messaging-member__avatar">
                 <img src={el?.img} alt="users" loading="lazy" />
-                {el?.active ? <div class="user-status"></div> : null}
+                {el?.active ? <div className="user-status"></div> : null}
               </div>
 
-              <span class="messaging-member__name">{el?.userName}</span>
-              <span class="messaging-member__message">{el?.lastMessage}</span>
+              <span className="messaging-member__name">{el?.userName}</span>
+              <span className="messaging-member__message">
+                {el?.lastMessage}
+              </span>
             </div>
           </li>
         );

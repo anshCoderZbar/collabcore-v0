@@ -1,32 +1,31 @@
-import { format } from "date-fns";
 import React from "react";
 
 export const ChatRoom = () => {
   return (
-    <div class="chat__container">
-      <div class="chat__wrapper">
-        <div class="chat__messaging messaging-member--online  pl-2 pl-md-4 pr-2">
-          <div class="chat__infos pl-2 pl-md-0">
-            <div class="chat-member__wrapper" data-online="true">
-              <div class="chat-member__avatar">
+    <div className="chat__container">
+      <div className="chat__wrapper">
+        <div className="chat__messaging messaging-member--online  pl-2 pl-md-4 pr-2">
+          <div className="chat__infos pl-2 pl-md-0">
+            <div className="chat-member__wrapper" data-online="true">
+              <div className="chat-member__avatar">
                 <img
                   src={require("app/assets/logo1.png")}
                   alt="Jenny Smith"
                   loading="lazy"
                 />
-                <div class="user-status user-status--large"></div>
+                <div className="user-status user-status--large"></div>
               </div>
-              <div class="chat-member__details">
-                <span class="chat-member__name">Forever 21</span>
-                <span class="chat-member__status">2 Members</span>
+              <div className="chat-member__details">
+                <span className="chat-member__name">Forever 21</span>
+                <span className="chat-member__status">2 Members</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="chat__content px-3">
-          <ul class="chat__list-messages">
+        <div className="chat__content px-3">
+          <ul className="chat__list-messages">
             <li className="justify-content-start">
-              <div class="chat-member__avatar">
+              <div className="chat-member__avatar">
                 <img
                   src={require("app/assets/logo1.png")}
                   alt="Jenny Smith"
@@ -34,7 +33,7 @@ export const ChatRoom = () => {
                 />
               </div>
               <div className="chat_cont">
-                <div class="chat__user">
+                <div className="chat__user">
                   <h2>Forever 21</h2>
                 </div>
                 <div className="offer_box">
@@ -65,7 +64,7 @@ export const ChatRoom = () => {
               </div>
             </li>
             <li className="justify-content-start">
-              <div class="chat-member__avatar">
+              <div className="chat-member__avatar">
                 <img
                   src={require("app/assets/logo2.png")}
                   alt="Jenny Smith"
@@ -73,7 +72,7 @@ export const ChatRoom = () => {
                 />
               </div>
               <div className="chat_cont">
-                <div class="chat__user">
+                <div className="chat__user">
                   <h2>Jenna McCarthy</h2>
                   <p>
                     Hey Nicole, I'm Jenna! PR here at Forever 21. Thanks for
@@ -97,19 +96,18 @@ export const ChatRoom = () => {
             </li>
           </ul>
         </div>
-        <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
-          <div class="custom-form__send-wrapper">
+        <div className="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
+          <div className="custom-form__send-wrapper">
             <input
               type="text"
-              class="form-control custom-form"
+              className="form-control custom-form"
               id="message"
               placeholder="Ecrivez un message …"
-              autocomplete="off"
             />
-            <div class="custom-form__send-img">
+            <div className="custom-form__send-img">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon svg-icon--send-img"
+                className="svg-icon svg-icon--send-img"
                 viewBox="0 0 45.7 45.7"
               >
                 <path
@@ -118,10 +116,10 @@ export const ChatRoom = () => {
                 />
               </svg>
             </div>
-            <div class="custom-form__send-emoji">
+            <div className="custom-form__send-emoji">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon svg-icon--send-emoji"
+                className="svg-icon svg-icon--send-emoji"
                 viewBox="0 0 46.2 46.2"
               >
                 <path
@@ -130,10 +128,10 @@ export const ChatRoom = () => {
                 />
               </svg>
             </div>
-            <button type="submit" class="custom-form__send-submit">
+            <button type="submit" className="custom-form__send-submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="svg-icon svg-icon--send"
+                className="svg-icon svg-icon--send"
                 viewBox="0 0 45.6 45.6"
               >
                 <g>
