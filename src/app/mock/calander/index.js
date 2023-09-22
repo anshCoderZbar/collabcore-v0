@@ -65,4 +65,10 @@ export const EVENTS = [
     start: new Date("2023 5 6 14:00"),
     end: new Date("2023 5 6 15:00"),
   },
+  {
+    event_id: 11,
+    title: "Event 11",
+    start: new Date("2023 9 21 14:00"),
+    end: new Date("2023 9 21 15:00"),
+  },
 ];

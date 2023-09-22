@@ -4,11 +4,14 @@
   color-scheme: light;
   --main-color: #000;
   --main-bg-color: #fff;
+  --red-100: #f0dfdf;
+  --red-500: #8f1414;
   --green-100: #ebfdf3;
   --green-300: #b0f0c9;
   --green-400: #05ab5d;
   --green-500: #14b068;
   --green-700: #197e53;
+  --blue-100: #e0f1f7;
   --blue-500: #004fe9;
   --blue-600: #443bff;
   --blue-700: #204f99;
