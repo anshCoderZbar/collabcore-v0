@@ -83,3 +83,9 @@
   cursor: pointer;
   font-size: 10px;
 }
+
+.form-select:focus {
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}

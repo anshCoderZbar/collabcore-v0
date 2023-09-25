@@ -93,7 +93,7 @@
 
 .input_btns_icons {
   position: absolute;
-  z-index: 99;
+  z-index: 9;
   top: 15px;
   right: 15px;
 }
@@ -385,6 +385,51 @@
   width: 100%;
 }
 
+.offer_price_pop h2 {
+  background-color: var(--gray-100);
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--main-color);
+}
+
+.offer_inputs {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.offer_inputs span {
+  color: var(--gray-800);
+  font-weight: 500;
+}
+
+.offer_inputs input[type="number"],
+.offer_inputs select {
+  width: 110px;
+  border: 1px solid var(--gray-200);
+  border-radius: 11px;
+  padding: 10px;
+  outline: none;
+}
+.offer_inputs select:focus {
+  border: 1px solid var(--gray-200);
+}
+.offer_pop_bottom {
+  background-color: var(--gray-200);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.offer_pop_bottom h3 {
+  font-size: 18px;
+  color: var(--main-color);
+}
+.offer_pop_bottom h3 span {
+  font-weight: 600;
+}
 @media (max-width: 767px) {
   .chat-member__avatar {
     width: 2.5rem;
@@ -571,8 +616,12 @@
 .user-name {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   color: var(--main-color);
+}
+
+.custom-form__document-img {
+  cursor: pointer;
 }
 
 .action-icons {
@@ -601,6 +650,16 @@
 .accordion-body {
   background: var(--main-bg-color);
   border-top-left-radius: 0 !important;
+}
+
+.offerSendBtn {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+
+.offerSendBtn button {
+  color: var(--green-700);
 }
 
 /* Media Queries for Breakpoints */
@@ -656,6 +715,11 @@
   }
   .chat_show_icon {
     display: block;
+  }
+  .chat--mobile.chat--show {
+    display: block;
+    transform: translateY(7%);
+    border-radius: 0;
   }
 }
 

@@ -27,7 +27,7 @@ export const UserProfile = () => {
   return (
     <div className="user-profile__wrapper">
       <div
-        class="user-profile__close d-flex d-xl-none"
+        className="user-profile__close d-flex d-xl-none"
         onClick={() => setOpenProfile(false)}
       >
         <AiOutlineClose />

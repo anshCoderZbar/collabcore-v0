@@ -12,13 +12,13 @@ export const Insights = () => {
         <div className="insights_banner">
           <h1>Instagram</h1>
           <div className="insights_select">
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>Month</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>Instagram</option>
               <option value="1">FaceBook</option>
               <option value="2">Twitter</option>

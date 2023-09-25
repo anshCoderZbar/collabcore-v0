@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FiPlus } from "react-icons/fi";
 import { GrEmoji } from "react-icons/gr";
@@ -8,10 +8,13 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { useAtom } from "jotai";
 import { openChatRoom } from "store/ChatRoom";
 import { openUserProfile } from "store/ChatRoom";
+import { CustomModal } from "components/Modal";
 
 export const ChatRoom = () => {
   const [_, setShowChat] = useAtom(openChatRoom);
   const [__, setOpenProfile] = useAtom(openUserProfile);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="chat__container">
@@ -131,7 +134,10 @@ export const ChatRoom = () => {
               placeholder="Message …"
             />
             <div className="d-flex gap-2 input_btns_icons">
-              <div className="custom-form__document-img">
+              <div
+                onClick={() => setIsOpen(true)}
+                className="custom-form__document-img"
+              >
                 <FiPlus />
               </div>
               <div className="custom-form__send-emoji">
@@ -139,6 +145,36 @@ export const ChatRoom = () => {
               </div>
             </div>
           </div>
+          <CustomModal setIsOpen={setIsOpen} isOpen={isOpen}>
+            <div className="offer_price_pop">
+              <h2>My Extra</h2>
+              <div className="offer_inputs ">
+                <span>For an Extra</span>
+                <input type="number" placeholder="$5" />
+                <span>and an additional</span>
+                <select
+                  className="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>0 days</option>
+                  <option value="1">1 days</option>
+                  <option value="2">2 days</option>
+                  <option value="3">3 days</option>
+                </select>
+              </div>
+              <div className="offer_pop_bottom">
+                <h3>
+                  Expected Days : <span>0 DAYS</span>
+                </h3>
+                <h3>Total: $5</h3>
+              </div>
+            </div>
+            <div className="offerSendBtn">
+              <button type="button" class="btn btn-outline-success">
+                Send
+              </button>
+            </div>
+          </CustomModal>
         </div>
       </div>
     </div>
