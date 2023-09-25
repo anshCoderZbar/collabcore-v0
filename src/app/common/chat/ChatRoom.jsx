@@ -3,24 +3,47 @@ import React from "react";
 import { FiPlus } from "react-icons/fi";
 import { GrEmoji } from "react-icons/gr";
 
+import { BiDotsHorizontalRounded } from "react-icons/bi";
+import { AiOutlineLeft } from "react-icons/ai";
+import { useAtom } from "jotai";
+import { openChatRoom } from "store/ChatRoom";
+import { openUserProfile } from "store/ChatRoom";
+
 export const ChatRoom = () => {
+  const [_, setShowChat] = useAtom(openChatRoom);
+  const [__, setOpenProfile] = useAtom(openUserProfile);
+
   return (
     <div className="chat__container">
       <div className="chat__wrapper">
         <div className="chat__messaging messaging-member--online  pl-2 pl-md-4 pr-2">
           <div className="chat__infos pl-2 pl-md-0">
-            <div className="chat-member__wrapper" data-online="true">
-              <div className="chat-member__avatar">
-                <img
-                  src={require("app/assets/logo1.png")}
-                  alt="Jenny Smith"
-                  loading="lazy"
-                />
-                <div className="user-status user-status--large"></div>
+            <div className="chat-member__wrapper">
+              <div className="d-flex align-items-center">
+                <div
+                  className="chat_show_icon mx-1"
+                  onClick={() => setShowChat(false)}
+                >
+                  <AiOutlineLeft />
+                </div>
+                <div className="chat-member__avatar">
+                  <img
+                    src={require("app/assets/logo1.png")}
+                    alt="Jenny Smith"
+                    loading="lazy"
+                  />
+                  <div className="user-status user-status--large"></div>
+                </div>
+                <div className="chat-member__details">
+                  <span className="chat-member__name">Forever 21</span>
+                  <span className="chat-member__status">2 Members</span>
+                </div>
               </div>
-              <div className="chat-member__details">
-                <span className="chat-member__name">Forever 21</span>
-                <span className="chat-member__status">2 Members</span>
+              <div
+                className="chat_dotes_icon"
+                onClick={() => setOpenProfile(true)}
+              >
+                <BiDotsHorizontalRounded />
               </div>
             </div>
           </div>

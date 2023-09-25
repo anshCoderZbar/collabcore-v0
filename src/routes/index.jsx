@@ -9,6 +9,7 @@ import { Chat } from "pages/chat";
 import { Projects } from "pages/projects";
 import { SingleProject } from "pages/projects/SingleProject";
 import { Calander } from "pages/calander";
+import { Insights } from "pages/insights";
 
 export const AllRoutes = (props) => {
   return (
@@ -52,6 +53,14 @@ export const AllRoutes = (props) => {
           element={
             <PrivateRoutes>
               <Calander />
+            </PrivateRoutes>
+          }
+        />
+        <Route
+          path="/insights"
+          element={
+            <PrivateRoutes>
+              <Insights />
             </PrivateRoutes>
           }
         />
