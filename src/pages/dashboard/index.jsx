@@ -20,7 +20,7 @@ export const Dashboard = () => {
         <div className="page_heading">
           <h1>Dashboard</h1>
         </div>
-        <div className="row">
+        <div className="row page_head_vs">
           {DashboardCardData?.map((elm, i) => {
             return <DashboardCard elm={elm} key={i} />;
           })}

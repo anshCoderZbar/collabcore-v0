@@ -418,7 +418,7 @@
   border: 1px solid var(--gray-200);
 }
 .offer_pop_bottom {
-  background-color: var(--gray-200);
+  background-color: var(--gray-100);
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -729,4 +729,7 @@
 
 /* Tiny */
 @media screen and (max-width: 480px) {
+  .chat-member__wrapper {
+    padding: 10px;
+  }
 }

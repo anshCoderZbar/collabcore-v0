@@ -162,7 +162,7 @@ export const DashboardCard = ({ elm }) => {
   };
 
   return (
-    <div className="col-lg-4 col-md-6">
+    <div className="col-lg-4  col-sm-6">
       <div className="dashboard_head_card ">
         <div className="card_top">
           <div className="row justify-content-center align-items-center">

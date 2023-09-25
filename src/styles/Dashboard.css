@@ -1,5 +1,5 @@
 .project_dashboard {
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .top_head h2 {
@@ -20,7 +20,9 @@
   font-weight: 600;
   color: var(--main-color);
 }
-
+.page_head_vs {
+  row-gap: 15px;
+}
 .dashboard_head_card {
   border: 2px solid var(--gray-200);
   border-radius: 12px;
@@ -134,4 +136,67 @@
   color: var(--gray-300);
   margin: 0;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+  .project_dashboard {
+    padding-top: 15px;
+  }
+  .page_heading h1 {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .card_top {
+    padding: 12px;
+  }
+  .card_text h3 {
+    font-size: 16px;
+  }
+  .card_text p {
+    font-size: 20px;
+    margin: 13px 0;
+  }
+  .detail_data p {
+    font-size: 14px;
+  }
+  .card_bottom {
+    padding: 12px;
+  }
+  .card_icon {
+    font-size: 16px;
+  }
+  .card_bottom p {
+    font-size: 13px;
+  }
+  .card_bottom button {
+    font-size: 13px;
+  }
+  .notification_sec h2 {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .notification_sec button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .notifications .date span {
+    font-size: 13px;
+  }
+  .notification_details img {
+    width: 30px;
+  }
+  .notification_details p {
+    font-size: 13px;
+  }
+  .time_stamp p {
+    font-size: 13px;
+  }
 }
