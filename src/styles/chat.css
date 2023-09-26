@@ -718,18 +718,81 @@
   }
   .chat--mobile.chat--show {
     display: block;
-    transform: translateY(7%);
+    transform: translateY(10%);
     border-radius: 0;
+  }
+  .chat__wrapper {
+    height: 89%;
+  }
+  .chat__send-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-bg-color);
+  }
+  .custom-form__send-wrapper {
+    padding: 0 5px;
+  }
+  .chat__user h2 {
+    font-size: 16px;
+    color: var(--main-color);
   }
 }
 
-/* Mobile */
 @media screen and (max-width: 575px) {
-}
-
-/* Tiny */
-@media screen and (max-width: 480px) {
   .chat-member__wrapper {
     padding: 10px;
+  }
+  .messaging-member__wrapper {
+    padding: 10px;
+  }
+  .messaging-member__name {
+    font-size: 16px;
+  }
+  .offer_heading {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .offer_main_details {
+    padding: 12px;
+  }
+  .view_details,
+  .accept_btn,
+  .deny_btn {
+    padding: 6px 6px;
+    border-radius: 9px;
+    font-size: 13px;
+  }
+  .offer_sub_head,
+  .offer_date {
+    font-size: 13px;
+  }
+  .offer_amt {
+    padding: 10px 0;
+  }
+  .offer_amt span {
+    padding: 4px 7px;
+    font-size: 12px;
+  }
+  .chat__user h2 {
+    font-size: 14px;
+    color: var(--main-color);
+  }
+  .chat__user p {
+    font-size: 13px;
+    padding: 12px;
+  }
+  .msg_img {
+    padding: 12px;
+  }
+  .msg_img h3 {
+    font-size: 13px;
+  }
+  .msg_img a {
+    font-size: 13px;
+  }
+  .msg_img img {
+    width: 125px;
+    padding: 11px;
   }
 }

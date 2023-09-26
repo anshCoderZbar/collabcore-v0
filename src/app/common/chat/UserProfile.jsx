@@ -1,14 +1,14 @@
 import React from "react";
+import { useAtom } from "jotai";
 
-import pdfIcon from "app/assets/pdf_icon.png";
-
-import pdf from "app/assets/dummy.pdf";
+import { openUserProfile } from "store/ChatRoom";
 
 import { BsSend } from "react-icons/bs";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { openUserProfile } from "store/ChatRoom";
-import { useAtom } from "jotai";
+
+import pdfIcon from "app/assets/pdf_icon.png";
+import pdf from "app/assets/dummy.pdf";
 
 export const UserProfile = () => {
   const [__, setOpenProfile] = useAtom(openUserProfile);
@@ -107,6 +107,7 @@ export const UserProfile = () => {
                   <img src={pdfIcon} alt="pdf icon" width={50} />
                 </div>
                 <div className="pdf_details">
+                  {/* <p> {pdf?.length>=15?pdf.slice(0,15)+"...":pdf}</p> */}
                   <p> {pdf}</p>
                   <a href={pdf} target="_blank" className="pdf_view">
                     View

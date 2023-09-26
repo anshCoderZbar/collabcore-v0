@@ -19,7 +19,7 @@ export const Chat = () => {
     <div className="chat_page">
       <div className="home-page__content messages-page">
         <div className="container-fluid h-100">
-          <div className="row px-0 h-100">
+          <div className="row px-0 g-0 h-100">
             <div className="col-12 col-md-4 col-lg-5 col-xl-3 px-0 messages-page__list-scroll">
               <div className="messages-page__search mb-0 px-3 pb-3">
                 <div className="custom-form__search-wrapper">
@@ -47,7 +47,7 @@ export const Chat = () => {
               <ChatRoom />
             </div>
             <div
-              className={`col-12 col-md-5 col-lg-4 col-xl-3 px-4 px-sm-5 px-lg-4 user-profile user-profile--large ${
+              className={`col-12 col-md-5 col-lg-4 col-xl-3 user-profile user-profile--large ${
                 openProfile ? "user-profile--show" : ""
               }`}
             >

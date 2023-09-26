@@ -9,6 +9,7 @@ import { useAtom } from "jotai";
 import { openChatRoom } from "store/ChatRoom";
 import { openUserProfile } from "store/ChatRoom";
 import { CustomModal } from "components/Modal";
+import { OfferContract } from "./OfferContract";
 
 export const ChatRoom = () => {
   const [_, setShowChat] = useAtom(openChatRoom);
@@ -51,7 +52,7 @@ export const ChatRoom = () => {
             </div>
           </div>
         </div>
-        <div className="chat__content px-3">
+        <div className="chat__content px-1 sm-px-3">
           <ul className="chat__list-messages">
             <li className="justify-content-start">
               <div className="chat-member__avatar">
@@ -125,7 +126,7 @@ export const ChatRoom = () => {
             </li>
           </ul>
         </div>
-        <div className="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
+        <div className="chat__send-container  px-md-3 pt-1 pt-md-3">
           <div className="custom-form__send-wrapper">
             <input
               type="text"
@@ -145,36 +146,7 @@ export const ChatRoom = () => {
               </div>
             </div>
           </div>
-          <CustomModal setIsOpen={setIsOpen} isOpen={isOpen}>
-            <div className="offer_price_pop">
-              <h2>My Extra</h2>
-              <div className="offer_inputs ">
-                <span>For an Extra</span>
-                <input type="number" placeholder="$5" />
-                <span>and an additional</span>
-                <select
-                  className="form-select"
-                  aria-label="Default select example"
-                >
-                  <option selected>0 days</option>
-                  <option value="1">1 days</option>
-                  <option value="2">2 days</option>
-                  <option value="3">3 days</option>
-                </select>
-              </div>
-              <div className="offer_pop_bottom">
-                <h3>
-                  Expected Days : <span>0 DAYS</span>
-                </h3>
-                <h3>Total: $5</h3>
-              </div>
-            </div>
-            <div className="offerSendBtn">
-              <button type="button" class="btn btn-outline-success">
-                Send
-              </button>
-            </div>
-          </CustomModal>
+          <OfferContract setIsOpen={setIsOpen} isOpen={isOpen} />
         </div>
       </div>
     </div>

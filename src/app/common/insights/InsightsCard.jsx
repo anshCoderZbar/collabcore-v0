@@ -1,7 +1,6 @@
 import React from "react";
 
 import { BsArrowDown, BsArrowUp, BsInfoLg } from "react-icons/bs";
-import { PiUsersThree } from "react-icons/pi";
 
 export const InsightsCard = ({ details }) => {
   return (
@@ -19,7 +18,7 @@ export const InsightsCard = ({ details }) => {
           </div>
           <div className="col-4 d-flex justify-content-end">
             <div
-              className="icon icon-shape  rounded-circle "
+              className="icon_vshc icon-shape  rounded-circle "
               style={{ background: details?.bgColor, color: details?.color }}
             >
               {details?.icon}
