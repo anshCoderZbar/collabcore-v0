@@ -1,0 +1,120 @@
+.onboarding_header {
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.onBoard_logo img {
+  width: 200px;
+  position: absolute;
+  left: 20px;
+}
+
+.onboard_steps {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.onboard_steps button {
+  color: #a5a5a5;
+  background: none;
+  border: none;
+  font-weight: 500;
+}
+
+.onboard_steps span {
+  color: #4f4d55;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.onboard_btn_active {
+  color: #112232 !important;
+}
+.form-select {
+  width: 30rem !important;
+  border: 1px solid #e6e6e6 !important;
+}
+.form-select :focus {
+  outline: none !important;
+  border: 1px solid #e6e6e6 !important;
+}
+.setup_acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.setup_container h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.setup-sub-head {
+  color: #4f4d55;
+  text-align: center;
+  font-size: 16px;
+}
+
+.profile_set {
+  margin-top: 50px;
+}
+
+.input_onb {
+  border: 1px solid #e6e6e6 !important;
+  padding: 10px !important;
+  font-size: 14px !important;
+}
+
+.input_onb:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #e6e6e6 !important;
+}
+.input_onb::placeholder {
+  font-size: 14px;
+}
+
+.guZdik {
+  border: 1px dashed #e6e6e6 !important;
+  padding: 40px 10px !important;
+}
+
+.upload_profile {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.upload_profile_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.upload_profile_img img {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 35px;
+  text-align: center;
+}
+
+form input[type="submit"] {
+  color: #fff;
+  background: #1751d0;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}

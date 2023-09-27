@@ -11,6 +11,7 @@ import { Calander } from "pages/calander";
 import { Insights } from "pages/insights";
 import { Login } from "pages/auth/Login";
 import { SignUp } from "pages/auth/SignUp";
+import { Onboarding } from "pages/onboarding";
 
 export const AllRoutes = (props) => {
   return (
@@ -78,6 +79,14 @@ export const AllRoutes = (props) => {
           element={
             <PublicRoute restricted={props?.auth}>
               <SignUp />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/account-setup"
+          element={
+            <PublicRoute restricted={props?.auth}>
+              <Onboarding />
             </PublicRoute>
           }
         />

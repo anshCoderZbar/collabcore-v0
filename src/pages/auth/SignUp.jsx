@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import "styles/Auth.css";
@@ -15,6 +15,7 @@ import { MetaIcon } from "app/icons";
 import { ImCheckmark } from "react-icons/im";
 
 export const SignUp = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     document.documentElement.setAttribute("data-applied-mode", "light");
   }, []);
@@ -28,6 +29,7 @@ export const SignUp = () => {
 
   const signIn = (data) => {
     console.log(data);
+    navigate("/account-setup");
   };
 
   return (
