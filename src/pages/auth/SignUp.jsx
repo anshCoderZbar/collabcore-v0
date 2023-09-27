@@ -25,13 +25,24 @@ export const SignUp = () => {
     handleSubmit,
     formState: { errors },
     trigger,
-  } = useForm({ resolver: yupResolver(signInSchema) });
+    watch,
+  } = useForm({ mode: "all", resolver: yupResolver(signInSchema) });
 
   const signIn = (data) => {
     console.log(data);
     navigate("/account-setup");
   };
 
+  const showErrorMessage = (error) => {
+    if (
+      errors?.password?.message !== undefined &&
+      errors?.password?.message !== "Password is required" &&
+      errors?.password?.message !== error
+    ) {
+      return true;
+    } else return;
+  };
+  console.log(errors?.password);
   return (
     <div className="auth_page">
       <div className="container-fluid ">
@@ -82,9 +93,8 @@ export const SignUp = () => {
                       className="form-control input_vss"
                       placeholder="Enter password"
                       autoComplete="false"
-                      onChange={() => {
-                        trigger("password");
-                      }}
+                      onBlur={() => trigger("password")}
+                      onChange={() => watch("password")}
                       {...register("password")}
                     />
                   </div>
@@ -92,7 +102,15 @@ export const SignUp = () => {
                     <div className="row">
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              showErrorMessage(
+                                "Password must contains one lowercase letter"
+                              )
+                                ? "bg-success"
+                                : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           one lowercase character
