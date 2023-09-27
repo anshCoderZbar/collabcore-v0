@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { passwordValidator } from "app/common/auth/state";
 
 import "styles/Auth.css";
 
@@ -16,6 +17,8 @@ import { ImCheckmark } from "react-icons/im";
 
 export const SignUp = () => {
   const navigate = useNavigate();
+  const [password, setPassword] = useState("");
+  const [validationResults, setValidationResults] = useState(passwordValidator);
   useEffect(() => {
     document.documentElement.setAttribute("data-applied-mode", "light");
   }, []);
@@ -24,8 +27,24 @@ export const SignUp = () => {
     register,
     handleSubmit,
     formState: { errors },
-    trigger,
-  } = useForm({ resolver: yupResolver(signInSchema) });
+  } = useForm({ mode: "all", resolver: yupResolver(signInSchema) });
+
+  const validatePassword = (newPassword) => {
+    const updatedValidationResults = {
+      lowercaseValid: /[a-z]/.test(newPassword),
+      uppercaseValid: /[A-Z]/.test(newPassword),
+      numberValid: /[0-9]/.test(newPassword),
+      lengthValid: newPassword.length >= 8,
+      specialCharValid: /[#?!@$%^&*-]/.test(newPassword),
+    };
+
+    setValidationResults(updatedValidationResults);
+  };
+
+  const handlePasswordChange = (event) => {
+    const newPassword = event.target.value;
+    validatePassword(newPassword);
+  };
 
   const signIn = (data) => {
     console.log(data);
@@ -75,6 +94,9 @@ export const SignUp = () => {
                       placeholder="Enter Email"
                       {...register("email")}
                     />
+                    {errors?.email && (
+                      <p className="errorMessage">{errors?.email?.message}</p>
+                    )}
                   </div>
                   <div className="mb-3">
                     <input
@@ -82,17 +104,22 @@ export const SignUp = () => {
                       className="form-control input_vss"
                       placeholder="Enter password"
                       autoComplete="false"
-                      onChange={() => {
-                        trigger("password");
-                      }}
-                      {...register("password")}
+                      {...register("password", {
+                        onChange: handlePasswordChange,
+                      })}
                     />
                   </div>
                   <div className="mb-3 ">
                     <div className="row">
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              validationResults.lowercaseValid
+                                ? "bg-success"
+                                : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           one lowercase character
@@ -100,7 +127,13 @@ export const SignUp = () => {
                       </div>
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              validationResults.specialCharValid
+                                ? "bg-success"
+                                : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           one special character
@@ -110,7 +143,13 @@ export const SignUp = () => {
                     <div className="row">
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              validationResults.uppercaseValid
+                                ? "bg-success"
+                                : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           one uppercase character
@@ -118,7 +157,11 @@ export const SignUp = () => {
                       </div>
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              validationResults.lengthValid ? "bg-success" : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           8 character minimum
@@ -128,7 +171,11 @@ export const SignUp = () => {
                     <div className="row">
                       <div className="col-lg-6 sign_check">
                         <p>
-                          <span>
+                          <span
+                            className={`${
+                              validationResults.numberValid ? "bg-success" : ""
+                            }`}
+                          >
                             <ImCheckmark />
                           </span>
                           one number
