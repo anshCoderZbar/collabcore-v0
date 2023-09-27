@@ -72,3 +72,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.errorMessage {
+  color: var(--red-500);
+  font-size: 13px;
+}
