@@ -138,6 +138,55 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1550px) {
+  .top_head h2 {
+    font-size: 13px;
+  }
+  .top_head a {
+    font-size: 13px;
+  }
+  .page_heading h1 {
+    margin: 15px 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--main-color);
+  }
+  .card_top {
+    padding: 15px;
+  }
+  .card_text h3 {
+    font-size: 16px;
+  }
+  .card_text p {
+    font-size: 20px;
+    margin: 9px 0;
+  }
+  .card_icon {
+    font-size: 15px;
+  }
+  .detail_data p {
+    font-size: 13px;
+  }
+  .card_bottom {
+    padding: 15px;
+  }
+  .card_bottom p {
+    font-size: 14px;
+  }
+  .card_bottom button {
+    font-size: 13px;
+  }
+  .notification_sec h2 {
+    margin: 25px 0 15px 0;
+    font-size: 25px;
+  }
+  .notifications .date {
+    padding: 7px 14px;
+  }
+  .notifications .date span {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1199px) {
 }
 

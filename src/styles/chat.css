@@ -143,7 +143,11 @@
   font-weight: 500;
   color: var(--main-color);
   margin-top: auto;
-  font-size: 17px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+  word-break: break-word;
 }
 
 .messaging-member__message {
@@ -488,11 +492,11 @@
   border-radius: 0;
 }
 
-.chat--mobile.chat--show {
+/* .chat--mobile.chat--show {
   display: block;
   transform: translateY(10%);
   border-radius: 0;
-}
+} */
 
 /* Base Styles */
 .user-profile {
@@ -601,7 +605,7 @@
 }
 
 .user-image {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
@@ -661,17 +665,97 @@
 .offerSendBtn button {
   color: var(--green-700);
 }
-
-/* Media Queries for Breakpoints */
-@media screen and (min-width: 1441px) {
-}
-
-/* Extra Large */
-@media screen and (max-width: 1440px) {
+.pdf_details_vs p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 5px;
 }
 
 /* Large */
+@media screen and (max-width: 1550px) {
+  .messaging-member__wrapper {
+    padding: 10px;
+  }
+  .messaging-member__name {
+    font-size: 14px;
+  }
+  .messages-page__title {
+    font-size: 20px;
+  }
+  .user-profile__wrapper {
+    padding-top: 3rem;
+  }
+  .user-profile__avatar img {
+    width: 70px;
+    border-radius: 50%;
+  }
+  .user-name {
+    font-size: 13px;
+  }
+
+  .messaging-member__message {
+    font-size: 13px;
+  }
+  .chat-member__name {
+    font-size: 15px;
+  }
+  .chat__user h2 {
+    font-size: 14px;
+  }
+  .chat-member__status {
+    font-size: 13px;
+  }
+  .offer_heading {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .offer_main_details {
+    padding: 10px 15px;
+  }
+  .offer_sub_head,
+  .offer_date {
+    font-size: 13px;
+  }
+  .offer_amt {
+    padding: 15px 0;
+  }
+  .offer_amt span {
+    font-size: 13px;
+  }
+  .view_details,
+  .accept_btn,
+  .deny_btn {
+    padding: 4px 13px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .chat__user p {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .msg_img h3 {
+    font-size: 14px;
+  }
+  .msg_img a {
+    font-size: 12px;
+  }
+  .attach_body {
+    padding: 10px 10px;
+  }
+  .pdf_view,
+  .btn_download {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1366px) {
+  .messaging-member__wrapper {
+    padding: 15px;
+  }
+  .messaging-member__name {
+    font-size: 16px;
+  }
 }
 
 /* Medium */
@@ -694,6 +778,47 @@
 
 /* Small */
 @media screen and (max-width: 991px) {
+  .messages-page__title {
+    font-size: 20px;
+  }
+  .chat-member__wrapper {
+    padding: 10px 10px;
+  }
+  .offer_heading {
+    padding: 15px;
+    font-size: 15px;
+  }
+  .offer_main_details {
+    padding: 15px;
+  }
+  .offer_amt {
+    padding: 12px 0;
+  }
+  .offer_amt span {
+    padding: 4px 10px;
+    font-size: 15px;
+  }
+  .view_details,
+  .accept_btn,
+  .deny_btn {
+    font-size: 13px;
+  }
+  .chat__user h2 {
+    font-size: 16px;
+  }
+  .chat__user p {
+    max-width: 20rem;
+  }
+  .msg_img h3 {
+    font-size: 14px;
+  }
+  .msg_img a {
+    font-size: 13px;
+  }
+  .msg_img img {
+    width: 160px;
+    padding: 10px;
+  }
 }
 
 /* Extra Small */
@@ -737,6 +862,12 @@
     font-size: 16px;
     color: var(--main-color);
   }
+  .chat__user p {
+    max-width: 33rem;
+  }
+  .user-profile__wrapper {
+    padding-top: 7rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -747,7 +878,7 @@
     padding: 10px;
   }
   .messaging-member__name {
-    font-size: 16px;
+    font-size: 15px;
   }
   .offer_heading {
     padding: 12px;

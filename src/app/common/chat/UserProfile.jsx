@@ -104,9 +104,9 @@ export const UserProfile = () => {
             <div className="accordion-body">
               <div className="d-flex align-items-center gap-2 attach_body">
                 <div className="img">
-                  <img src={pdfIcon} alt="pdf icon" width={50} />
+                  <img src={pdfIcon} alt="pdf icon" width={40} />
                 </div>
-                <div className="pdf_details">
+                <div className="pdf_details_vs">
                   {/* <p> {pdf?.length>=15?pdf.slice(0,15)+"...":pdf}</p> */}
                   <p> {pdf}</p>
                   <a href={pdf} target="_blank" className="pdf_view">
@@ -119,9 +119,9 @@ export const UserProfile = () => {
               </div>
               <div className="d-flex align-items-center gap-2 attach_body">
                 <div className="img">
-                  <img src={pdfIcon} alt="pdf icon" width={50} />
+                  <img src={pdfIcon} alt="pdf icon" width={40} />
                 </div>
-                <div className="pdf_details">
+                <div className="pdf_details_vs">
                   <p> {pdf}</p>
                   <a href={pdf} target="_blank" className="pdf_view">
                     View

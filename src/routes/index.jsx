@@ -4,12 +4,13 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { PrivateRoutes } from "./private";
 import { Dashboard } from "pages/dashboard";
 import { PublicRoute } from "./public";
-import { Login } from "pages/login";
 import { Chat } from "pages/chat";
 import { Projects } from "pages/projects";
 import { SingleProject } from "pages/projects/SingleProject";
 import { Calander } from "pages/calander";
 import { Insights } from "pages/insights";
+import { Login } from "pages/auth/Login";
+import { SignUp } from "pages/auth/SignUp";
 
 export const AllRoutes = (props) => {
   return (
@@ -69,6 +70,14 @@ export const AllRoutes = (props) => {
           element={
             <PublicRoute restricted={props?.auth}>
               <Login />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/sign-in"
+          element={
+            <PublicRoute restricted={props?.auth}>
+              <SignUp />
             </PublicRoute>
           }
         />

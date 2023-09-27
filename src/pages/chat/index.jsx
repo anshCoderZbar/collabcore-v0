@@ -18,9 +18,9 @@ export const Chat = () => {
   return (
     <div className="chat_page">
       <div className="home-page__content messages-page">
-        <div className="container-fluid h-100">
+        <div className="container-fluid px-md-0 h-100">
           <div className="row px-0 g-0 h-100">
-            <div className="col-12 col-md-4 col-lg-5 col-xl-3 px-0 messages-page__list-scroll">
+            <div className="col-12 col-md-5 col-lg-5 col-xl-3 px-0 messages-page__list-scroll">
               <div className="messages-page__search mb-0 px-3 pb-3">
                 <div className="custom-form__search-wrapper">
                   <input
@@ -40,7 +40,7 @@ export const Chat = () => {
             </div>
 
             <div
-              className={`chat col-12 col-md-8 col-lg-7 col-xl-6 px-0 pl-md-1 chat--mobile ${
+              className={`chat col-12 col-md-7 col-lg-7 col-xl-6 px-0 pl-md-1 chat--mobile ${
                 showChat ? "chat--show" : ""
               }`}
             >

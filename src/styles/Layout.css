@@ -269,6 +269,52 @@
 /* profile menu */
 
 /* responsive css */
+@media only screen and (max-width: 1550px) {
+  .dashboard_sidebar {
+    width: 240px;
+  }
+  .web_layout {
+    grid-template-columns: 240px 1fr;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .logo img {
+    width: 160px;
+    margin: 10px 0 15px 0;
+  }
+  .nav-links p {
+    margin: 10px 10px;
+    font-size: 14px;
+  }
+  .icon {
+    font-size: 20px;
+    color: var(--gray-800);
+  }
+  .nav-links ul li a {
+    font-size: 13px;
+  }
+  .nav-links ul li {
+    padding: 6px 13px;
+  }
+  .side_btn {
+    font-size: 13px;
+  }
+  .bell_icon {
+    border-right: 2px solid var(--gray-50);
+    font-size: 20px;
+  }
+  .head-input input::placeholder {
+    font-size: 12px;
+    color: var(--gray-800);
+  }
+  .profile h3 {
+    font-size: 13px;
+  }
+  .profile p {
+    font-size: 12px;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .web_layout {
