@@ -14,10 +14,10 @@ import user from "app/assets/user-img.jpg";
 import { FcGoogle } from "react-icons/fc";
 import { MetaIcon } from "app/icons";
 import { ImCheckmark } from "react-icons/im";
+import { FormInput } from "components/Form-Input/Input";
 
 export const SignUp = () => {
   const navigate = useNavigate();
-  const [password, setPassword] = useState("");
   const [validationResults, setValidationResults] = useState(passwordValidator);
   useEffect(() => {
     document.documentElement.setAttribute("data-applied-mode", "light");
@@ -55,7 +55,7 @@ export const SignUp = () => {
     <div className="auth_page">
       <div className="container-fluid ">
         <div className="row">
-          <div className="col-md-6 logins_details">
+          <div className="col-md-6 logins_details hei_smal">
             <div className="logo">
               <img src={logo} alt="logo" />
             </div>
@@ -88,7 +88,7 @@ export const SignUp = () => {
               <div className="auth_input">
                 <form onSubmit={handleSubmit(signIn)}>
                   <div className="mb-3">
-                    <input
+                    <FormInput
                       type="text"
                       className="form-control input_vss"
                       placeholder="Enter Email"
@@ -99,7 +99,7 @@ export const SignUp = () => {
                     )}
                   </div>
                   <div className="mb-3">
-                    <input
+                    <FormInput
                       type="password"
                       className="form-control input_vss"
                       placeholder="Enter password"

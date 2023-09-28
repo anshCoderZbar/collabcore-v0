@@ -254,3 +254,8 @@
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 380px) {
+  .hei_smal {
+    height: 115vh;
+  }
+}
