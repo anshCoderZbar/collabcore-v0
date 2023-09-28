@@ -237,7 +237,13 @@ export const SingleProject = () => {
                     </div>
                     <div className="pdf_details">
                       <p> {pdf}</p>
-                      <a href={pdf} target="_blank" className="pdf_view">
+                      <a
+                        href={pdf}
+                        target="_blank"
+                        without
+                        rel="noreferrer"
+                        className="pdf_view"
+                      >
                         View
                       </a>
                       <button className="btn_download" onClick={onButtonClick}>
@@ -253,7 +259,13 @@ export const SingleProject = () => {
                     </div>
                     <div className="pdf_details">
                       <p> {pdf}</p>
-                      <a href={pdf} target="_blank" className="pdf_view">
+                      <a
+                        href={pdf}
+                        target="_blank"
+                        without
+                        rel="noreferrer"
+                        className="pdf_view"
+                      >
                         View
                       </a>
                       <button className="btn_download" onClick={onButtonClick}>

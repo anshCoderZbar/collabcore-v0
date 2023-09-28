@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { SidebarData } from "app/mock/sidebar";
 
@@ -8,9 +8,12 @@ import { CgDarkMode } from "react-icons/cg";
 import { TbLogout } from "react-icons/tb";
 import { CiSettings } from "react-icons/ci";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { useToken } from "lib/utils/UseToken";
 
 export const Sidebar = () => {
+  const navigate = useNavigate();
   const [sidebarActive, setSidebarActive] = useState(false);
+  const { removeToken } = useToken();
   const setDark = () => {
     localStorage.setItem("theme", "dark");
     document.documentElement.setAttribute("data-applied-mode", "dark");
@@ -100,7 +103,14 @@ export const Sidebar = () => {
             </div>
           </li>
           <li>
-            <div className="d-flex gap-2 align-items-center">
+            <div
+              onClick={() => {
+                console.log("hello world");
+                removeToken();
+                navigate("/login");
+              }}
+              className="d-flex gap-2 align-items-center"
+            >
               <div className="icon">
                 <TbLogout />
               </div>

@@ -5,8 +5,6 @@ import { TableColumns } from "app/mock/Projects";
 import { TableData } from "app/mock/Projects";
 import { useNavigate } from "react-router-dom";
 
-import { AiOutlineCheck } from "react-icons/ai";
-
 export const Table = () => {
   const navigate = useNavigate();
 

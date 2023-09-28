@@ -19,3 +19,9 @@ export const signInSchema = object({
     )
     .min(8, "Password is too short - should be 8 chars minimum."),
 });
+
+export const onboardSchema = object({
+  select: string().required("type is required"),
+  profileName: string().required("name is required"),
+  userName: string().required("user name is required"),
+});
