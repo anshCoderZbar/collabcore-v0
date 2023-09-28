@@ -109,7 +109,13 @@ export const UserProfile = () => {
                 <div className="pdf_details_vs">
                   {/* <p> {pdf?.length>=15?pdf.slice(0,15)+"...":pdf}</p> */}
                   <p> {pdf}</p>
-                  <a href={pdf} target="_blank" className="pdf_view">
+                  <a
+                    href={pdf}
+                    target="_blank"
+                    without
+                    rel="noreferrer"
+                    className="pdf_view"
+                  >
                     View
                   </a>
                   <button className="btn_download" onClick={onButtonClick}>
@@ -123,7 +129,13 @@ export const UserProfile = () => {
                 </div>
                 <div className="pdf_details_vs">
                   <p> {pdf}</p>
-                  <a href={pdf} target="_blank" className="pdf_view">
+                  <a
+                    href={pdf}
+                    target="_blank"
+                    without
+                    rel="noreferrer"
+                    className="pdf_view"
+                  >
                     View
                   </a>
                   <button className="btn_download" onClick={onButtonClick}>

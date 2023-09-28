@@ -26,7 +26,7 @@ export const Onboarding = () => {
   return (
     <div className="onboarding_page">
       <div className="onboarding_header">
-        <div className="onBoard_logo">
+        <div className="onBoard_auth_logo">
           <img src={logo} alt="collabcore" />
         </div>
         <div className="onboard_steps">

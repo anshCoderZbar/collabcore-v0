@@ -113,7 +113,13 @@ export const ChatRoom = () => {
                   <p>This tangerine top would look amazing!</p>
                   <div className="msg_img">
                     <h3>Satin Cowl Neck Crop Top</h3>
-                    <a href="#" target="_blank" className="d-block">
+                    <a
+                      href="#"
+                      target="_blank"
+                      without
+                      rel="noreferrer"
+                      className="d-block"
+                    >
                       forever21.com/us/2000468243.html...
                     </a>
                     <img

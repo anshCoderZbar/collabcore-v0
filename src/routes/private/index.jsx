@@ -3,6 +3,6 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 export const PrivateRoutes = ({ children }) => {
-  const auth = false;
+  const auth = true;
   return <>{auth ? <Layout>{children}</Layout> : <Navigate to={"/login"} />}</>;
 };

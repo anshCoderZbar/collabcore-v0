@@ -19,7 +19,7 @@ export const Login = () => {
       <div className="container-fluid ">
         <div className="row">
           <div className="col-md-6 logins_details">
-            <div className="logo">
+            <div className="auth_logo">
               <img src={logo} alt="logo" />
             </div>
             <div className="auth_methods">
@@ -109,7 +109,7 @@ export const Login = () => {
               </p>
               <div className="d-flex align-items-center gap-2">
                 <div className="img-box">
-                  <img src={user} alt="some user image" />
+                  <img src={user} alt="some user " />
                 </div>
                 <div className="auth_profile">
                   <div className="auth_user">

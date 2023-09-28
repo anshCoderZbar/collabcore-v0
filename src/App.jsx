@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.js");
   }, []);
-  const auth = false;
+  const auth = true;
   return <AllRoutes auth={auth} />;
 }
 
