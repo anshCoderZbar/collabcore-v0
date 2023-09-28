@@ -47,9 +47,9 @@ export const Notification = () => {
             <div className="date">
               <span>{dateTxt}</span>
             </div>
-            {data?.elm?.map((elm) => {
+            {data?.elm?.map((elm, i) => {
               return (
-                <div className={`notification_wrapper `}>
+                <div key={i} className={`notification_wrapper `}>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center notification_details">
                       {elm?.img && <img src={elm?.img} alt="logo" />}

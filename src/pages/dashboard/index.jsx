@@ -8,6 +8,7 @@ import { DashboardCardData } from "app/mock/Dashboard";
 
 import { BsCheck2All } from "react-icons/bs";
 import { Notification } from "app/common/Dashboard/Notification";
+import { useToken } from "lib/utils/UseToken";
 
 export const Dashboard = () => {
   return (
