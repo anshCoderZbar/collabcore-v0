@@ -117,4 +117,105 @@ form input[type="submit"] {
   padding: 10px;
   border: none;
   border-radius: 6px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1199px) {
+  .onBoard_logo img {
+    width: 200px;
+  }
+  .onboard_steps {
+    font-size: 14px;
+  }
+  .setup_container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .setup-sub-head {
+    font-size: 15px;
+  }
+  .profile_set {
+    margin-top: 30px;
+  }
+  .upload_profile {
+    margin-top: 30px;
+  }
+  .guZdik {
+    padding: 35px 10px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .onBoard_logo img {
+    width: 170px;
+  }
+  .onboard_steps {
+    font-size: 14px;
+  }
+  .setup_container h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .setup-sub-head {
+    font-size: 15px;
+  }
+  .profile_set {
+    margin-top: 30px;
+  }
+  .upload_profile {
+    margin-top: 30px;
+  }
+  .guZdik {
+    padding: 35px 10px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-select {
+    width: 100% !important;
+    border: 1px solid #e6e6e6 !important;
+  }
+  .onBoard_logo img {
+    width: 150px;
+    position: relative;
+    left: 0;
+  }
+  .onboarding_header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    row-gap: 10px;
+    padding: 15px;
+  }
+  .setup_container h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .setup-sub-head {
+    font-size: 14px;
+  }
+  .profile_set {
+    margin-top: 25px;
+  }
+  .upload_profile {
+    margin-top: 25px;
+  }
+  .guZdik {
+    padding: 30px 10px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .onboard_steps {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .setup_container h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .guZdik {
+    padding: 25px 10px !important;
+  }
 }
