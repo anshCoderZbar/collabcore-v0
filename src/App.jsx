@@ -12,6 +12,7 @@ function App() {
   }, []);
 
   const auth = getToken();
+
   return <AllRoutes auth={auth} />;
 }
 
