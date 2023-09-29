@@ -1,5 +1,8 @@
 import { BiGridAlt } from "react-icons/bi";
 import { TbMessageDots } from "react-icons/tb";
+import { CiCalendarDate } from "react-icons/ci";
+import { IoLayersOutline } from "react-icons/io5";
+import { TbGraph } from "react-icons/tb";
 
 export const SidebarData = [
   {
@@ -12,7 +15,7 @@ export const SidebarData = [
     id: 2,
     name: "projects",
     slug: "/projects",
-    icon: <BiGridAlt />,
+    icon: <IoLayersOutline />,
   },
   {
     id: 3,
@@ -24,12 +27,12 @@ export const SidebarData = [
     id: 4,
     name: "calander",
     slug: "/calander",
-    icon: <BiGridAlt />,
+    icon: <CiCalendarDate />,
   },
   {
     id: 5,
     name: "insights",
     slug: "/insights",
-    icon: <BiGridAlt />,
+    icon: <TbGraph />,
   },
 ];
