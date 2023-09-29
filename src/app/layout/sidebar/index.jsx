@@ -57,9 +57,9 @@ export const Sidebar = () => {
       >
         <MdOutlineKeyboardArrowLeft />
       </div>
-      <div className="logo">
+      <Link to={"/"} className="logo">
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
       <div className="nav-links">
         <ul className="nav-items">
           <p>General</p>

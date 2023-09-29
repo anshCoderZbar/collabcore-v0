@@ -25,11 +25,15 @@ export const Header = () => {
         <GoBell />
       </div>
       <div>
-        <div className="d-flex align-items-center gap-2">
+        <div
+          className="d-flex align-items-center gap-2"
+          style={{ cursor: "pointer " }}
+          onClick={() => setMenuToggle(!menuToggle)}
+        >
           <div className="img-box">
             <img src={user} alt="some user image" />
           </div>
-          <div className="profile" onClick={() => setMenuToggle(!menuToggle)}>
+          <div className="profile">
             <div className="user">
               <h3>nicolelopez</h3>
               <p>Nicole Lopez</p>
