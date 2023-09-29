@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 80%;
 }
 .insights_select select {
   background-color: var(--gray-100);
@@ -123,5 +124,9 @@
   .insights_select select {
     font-size: 12px;
     width: 94px;
+  }
+  .insights_select {
+    gap: 5px;
+    width: 67%;
   }
 }

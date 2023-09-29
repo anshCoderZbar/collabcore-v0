@@ -147,7 +147,7 @@
   }
   .page_heading h1 {
     margin: 15px 0;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: var(--main-color);
   }
@@ -171,10 +171,10 @@
     padding: 15px;
   }
   .card_bottom p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .card_bottom button {
-    font-size: 13px;
+    font-size: 12px;
   }
   .notification_sec h2 {
     margin: 25px 0 15px 0;
@@ -185,6 +185,23 @@
   }
   .notifications .date span {
     font-size: 13px;
+  }
+  .time_stamp span {
+    margin-right: 7px;
+    height: 7px;
+    width: 7px;
+  }
+  .time_stamp p {
+    font-size: 13px;
+  }
+  .card_bottom {
+    padding: 12px;
+  }
+  .notification_sec button {
+    font-size: 14px;
+  }
+  .notification_details p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1199px) {

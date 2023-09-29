@@ -1,4 +1,5 @@
 import { BiGridAlt } from "react-icons/bi";
+import { TbMessageDots } from "react-icons/tb";
 
 export const SidebarData = [
   {
@@ -17,7 +18,7 @@ export const SidebarData = [
     id: 3,
     name: "messages",
     slug: "/messages",
-    icon: <BiGridAlt />,
+    icon: <TbMessageDots />,
   },
   {
     id: 4,
