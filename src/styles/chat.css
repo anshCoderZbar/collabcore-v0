@@ -377,6 +377,7 @@
   font-size: 20px;
   cursor: pointer;
   display: none;
+  line-height: 0;
 }
 
 .chat-member__avatar {
@@ -708,7 +709,7 @@
   }
   .offer_heading {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .offer_main_details {
     padding: 10px 15px;
@@ -718,17 +719,17 @@
     font-size: 13px;
   }
   .offer_amt {
-    padding: 15px 0;
+    padding: 12px 0;
   }
   .offer_amt span {
-    font-size: 13px;
+    font-size: 12px;
   }
   .view_details,
   .accept_btn,
   .deny_btn {
     padding: 4px 13px;
     border-radius: 25px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
   }
   .chat__user p {
@@ -747,6 +748,47 @@
   .pdf_view,
   .btn_download {
     font-size: 13px;
+  }
+  .custom-form__search-wrapper input {
+    padding: 12px;
+    font-size: 13px;
+  }
+  .search_chat_icon {
+    top: 9px;
+  }
+  .messaging-member__wrapper {
+    padding: 0.5rem 1rem;
+    grid-template-columns: 3.6rem 3.6fr;
+    grid-template-rows: 1.8rem 1.8rem;
+    column-gap: 0.5rem;
+  }
+  .messages-page {
+    height: 88vh;
+  }
+  .messages-page__list.p-0 {
+    margin: 0;
+  }
+  .pdf_view,
+  .btn_download {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .pdf_view {
+    border-right: 1px solid var(--gray-500);
+    padding-right: 10px;
+  }
+  .btn_download {
+    padding-left: 7px;
+  }
+  .pdf_details_vs p {
+    margin-bottom: 0;
+  }
+  .custom-form__send-wrapper input {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+  .input_btns_icons {
+    top: 9px;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -872,7 +914,7 @@
 
 @media screen and (max-width: 575px) {
   .chat-member__wrapper {
-    padding: 10px;
+    padding: 10px 12px 10px 0px;
   }
   .messaging-member__wrapper {
     padding: 10px;

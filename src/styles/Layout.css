@@ -26,11 +26,13 @@
   position: absolute;
   right: -20px;
   top: 62px;
-  background-color: var(--gray-100);
-  color: var(--gray-900);
+  background-color: var(--blue-500);
+  color: var(--main-bg-color);
   font-size: 20px;
   cursor: pointer;
   display: none;
+  line-height: 0;
+  padding: 6px 0;
 }
 .logo img {
   width: 190px;
@@ -334,4 +336,7 @@
 
 .dashboard_active {
   transform: translateX(0%);
+}
+.calander_page {
+  overflow: hidden;
 }

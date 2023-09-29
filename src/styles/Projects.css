@@ -192,6 +192,82 @@
 .btn_download {
   padding-left: 15px;
 }
+/* .bMuwEY,
+.cQAWmj {
+  width: calc(100% - 80px) !important;
+} */
+
+@media (max-width: 1550px) {
+  .project_top h2 {
+    font-size: 14px;
+  }
+  .project_top a {
+    font-size: 14px;
+  }
+  .project_heading h1 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  .button_green {
+    border: 1px solid var(--green-500);
+    padding: 1px 8px;
+    font-size: 13px;
+  }
+  .company_table .table_para {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .iWyFZZ div:first-child {
+    font-size: 13px;
+  }
+  .pdf_view {
+    border-right: 2px solid var(--gray-500);
+    padding-right: 13px;
+  }
+  .pdf_view,
+  .btn_download {
+    font-size: 14px;
+  }
+  .page-btn ul li button {
+    padding: 7px 11px;
+    font-size: 13px;
+  }
+  .detail_box ul li .span_head {
+    font-size: 13px;
+  }
+  .detail_box ul li .span_details {
+    font-size: 14px;
+  }
+  .project_main_description p {
+    font-size: 14px;
+  }
+  .project_btns {
+    font-size: 12px;
+  }
+  .project_main_details p {
+    font-size: 14px;
+  }
+  .pdf_details {
+    width: 100%;
+    overflow: hidden;
+  }
+  .project_main_details {
+    padding: 26px;
+  }
+  .project_main_description {
+    padding: 26px;
+  }
+  .detail_head {
+    padding: 11px 25px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  .project_component {
+    overflow-x: hidden;
+  }
+}
+
 /* Define a media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   /* Hide the table on small screens */
@@ -234,11 +310,13 @@
 
 @media only screen and (max-width: 600px) {
   .page-btn ul {
-    gap: 13px;
+    gap: 6px;
   }
   .page-btn ul li button {
     padding: 7px 10px;
     font-size: 13px;
+    line-height: 16px;
+    height: 100%;
   }
   .detail_head {
     padding: 15px 15px;
@@ -247,10 +325,10 @@
     padding: 15px;
   }
   .detail_box ul li .span_head {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
   .detail_box ul li .span_details {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
   .project_main_description {
     padding: 15px;
