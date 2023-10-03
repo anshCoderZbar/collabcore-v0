@@ -20,29 +20,36 @@
   font-weight: 600;
   color: var(--main-color);
   text-align: center;
+  letter-spacing: -0.96px;
+  font-family: "Inter", sans-serif;
 }
 .auth_heading p {
   font-size: 16px;
   font-style: normal;
   color: var(--gray-700);
   text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 .logins_socials button {
   background-color: var(--main-bg-color);
-  color: var(--main-color);
-  border: 1px solid var(--gray-200);
+  color: var(--gray-950);
+  border: 1px solid var(--gray-150);
   width: 100%;
   text-align: center;
   padding: 8px;
   margin-top: 15px;
-  border-radius: 6px;
+  border-radius: 7px;
   font-size: 15px;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 1.5px 4px -1px #0a090b12;
 }
 
 .logins_socials button span {
-  margin-right: 8px;
-  font-size: 15px;
+  margin-right: 9px;
+  font-size: 24px;
+  line-height: 0;
 }
 
 .separator {
@@ -54,46 +61,60 @@
 .separator .line {
   height: 1px;
   flex: 1;
-  background-color: var(--gray-200);
+  background-color: var(--secondary-bg-light);
 }
 
 .separator h2 {
   padding: 0 10px;
-  color: var(--gray-800);
-  font-size: 15px;
+  color: var(--gray-550);
+  font-size: 14px;
   margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05px;
 }
 
 .input_vss {
-  border: 1px solid var(--gray-200) !important;
-  padding: 10px !important;
+  border: 1px solid var(--gray-250) !important;
+  padding: 12px 8px 12px 12px !important;
   font-size: 14px !important;
   width: 28rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
 }
 .auth_input {
   margin-top: 15px;
 }
 .input_vss:focus {
-  box-shadow: none !important;
   outline: none !important;
-  border: 1px solid var(--gray-200) !important;
+  border: 1px solid var(--gray-250) !important;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
 }
 .input_vss::placeholder {
   font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-550) !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.05px !important;
 }
 
 .input_check label {
   font-size: 14px;
-  color: var(--main-color);
+  color: var(--gray-950);
+  font-family: "Inter", sans-serif;
   font-weight: 500;
+  letter-spacing: -0.18px;
 }
 
 .forget_password button {
   background-color: var(--main--bg-color);
   border: none;
-  color: #0064e1;
+  color: #1751d0;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02px;
 }
 
 .submit_btn input[type="submit"] {
@@ -107,16 +128,20 @@
 }
 
 .route_auth p {
-  color: #4f4d55;
+  color: var(--gray-700);
+  font-family: "Inter", sans-serif;
   text-align: center;
   margin: 10px 0;
   font-size: 14px;
   font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.13px;
 }
 
 .route_auth p a {
   text-decoration: none;
-  color: #0064e1;
+  color: #1751d0;
+  margin-left: 8px;
 }
 
 .auth_img {
@@ -138,11 +163,15 @@
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
+  line-height: 29px;
+  letter-spacing: -0.72px;
 }
 
 .auth_user h3,
 .auth_user p {
   margin-bottom: 0;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-size: 14px;
   font-family: 400;
@@ -152,14 +181,16 @@
   bottom: 0;
 }
 .page_btm p {
-  color: #4f4d55;
   font-size: 13px;
+  color: var(--gray-700);
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05px;
 }
 .privacy_policy {
   margin-right: 15px;
 }
 .sign_check p {
-  color: #4f4d55;
+  color: var(--gray-700);
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -169,7 +200,7 @@
   height: 25px;
   width: 25px;
   background-color: #e6e6e6;
-  margin-right: 5px;
+  margin-right: 12px;
   border-radius: 25px;
   color: #fff;
   font-size: 14px;
