@@ -4,11 +4,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { SidebarData } from "app/mock/sidebar";
 
 import logo from "app/assets/logo.png";
-import { CgDarkMode } from "react-icons/cg";
 import { TbLogout } from "react-icons/tb";
-import { CiSettings } from "react-icons/ci";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { useToken } from "lib/utils/UseToken";
+import { DarkModeIcon } from "app/icons";
+import { SettingIcon } from "app/icons";
 
 export const Sidebar = () => {
   const navigate = useNavigate();
@@ -68,11 +68,21 @@ export const Sidebar = () => {
               <li
                 key={i}
                 className={`${
-                  window?.location?.pathname === menu?.slug ? "side_active" : ""
+                  window?.location?.pathname === menu?.slug
+                    ? "side_active "
+                    : ""
                 }`}
               >
                 <div className="d-flex gap-2 align-items-center   ">
-                  <div className="icon">{menu?.icon}</div>
+                  <div
+                    className={`sidebar_icon ${
+                      window?.location?.pathname === menu?.slug
+                        ? "sidebar_icon_active "
+                        : ""
+                    }`}
+                  >
+                    {menu?.icon}
+                  </div>
                   <Link to={menu?.slug}>{menu?.name}</Link>
                 </div>
               </li>
@@ -89,7 +99,7 @@ export const Sidebar = () => {
               onClick={changeTheme}
             >
               <div className="icon">
-                <CgDarkMode />
+                <DarkModeIcon />
               </div>
               <button className="side_btn">Dark Mode</button>
             </div>
@@ -97,7 +107,7 @@ export const Sidebar = () => {
           <li>
             <div className="d-flex gap-2 align-items-center">
               <div className="icon">
-                <CiSettings />
+                <SettingIcon />
               </div>
               <button className="side_btn">Settings</button>
             </div>

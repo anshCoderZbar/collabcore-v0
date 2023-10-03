@@ -48,6 +48,9 @@
 .nav-links p {
   color: var(--gray-900);
   margin: 15px 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 .nav-links ul {
   padding: 0;
@@ -55,12 +58,16 @@
   list-style: none;
   margin-top: 15px;
 }
-.icon {
+.sidebar_icon {
   font-size: 25px;
-  color: var(--gray-800);
+  stroke: var(--gray-800);
+  line-height: 0;
+}
+.sidebar_icon_active {
+  stroke: #fff !important;
 }
 .nav-links ul li {
-  padding: 8px 19px;
+  padding: 17px 17px;
   border-radius: 12px;
   transition: 0.2s ease-in-out;
 }
@@ -69,6 +76,8 @@
   color: var(--gray-800);
   font-size: 15px;
   text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
   position: relative;
   top: 2px;
 }
@@ -95,6 +104,8 @@
   text-transform: uppercase;
   position: relative;
   top: 2px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 /* sidebar */
@@ -287,7 +298,6 @@
   }
   .nav-links p {
     margin: 10px 10px;
-    font-size: 14px;
   }
   .icon {
     font-size: 20px;
@@ -297,7 +307,7 @@
     font-size: 13px;
   }
   .nav-links ul li {
-    padding: 6px 13px;
+    padding: 13px 13px;
   }
   .side_btn {
     font-size: 13px;

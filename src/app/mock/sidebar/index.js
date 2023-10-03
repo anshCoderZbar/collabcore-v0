@@ -1,38 +1,38 @@
-import { BiGridAlt } from "react-icons/bi";
-import { TbMessageDots } from "react-icons/tb";
-import { CiCalendarDate } from "react-icons/ci";
-import { IoLayersOutline } from "react-icons/io5";
-import { TbGraph } from "react-icons/tb";
+import { DashboardIcon } from "app/icons";
+import { BundleIcon } from "app/icons";
+import { MessageIcon } from "app/icons";
+import { CalanderIcon } from "app/icons";
+import { InsightIcon } from "app/icons";
 
 export const SidebarData = [
   {
     id: 1,
     name: "dashboard",
     slug: "/dashboard",
-    icon: <BiGridAlt />,
+    icon: <DashboardIcon />,
   },
   {
     id: 2,
     name: "projects",
     slug: "/projects",
-    icon: <IoLayersOutline />,
+    icon: <BundleIcon />,
   },
   {
     id: 3,
     name: "messages",
     slug: "/messages",
-    icon: <TbMessageDots />,
+    icon: <MessageIcon />,
   },
   {
     id: 4,
     name: "calander",
     slug: "/calander",
-    icon: <CiCalendarDate />,
+    icon: <CalanderIcon />,
   },
   {
     id: 5,
     name: "insights",
     slug: "/insights",
-    icon: <TbGraph />,
+    icon: <InsightIcon />,
   },
 ];
