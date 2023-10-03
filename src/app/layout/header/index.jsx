@@ -1,30 +1,44 @@
 import React, { useState } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import { GoBell } from "react-icons/go";
 
 import user from "app/assets/user-img.jpg";
 
 export const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
+  const [openMenu, setopenMenu] = useState(false);
   return (
     <div className="header">
-      <div className="position-relative w-75">
-        <div className="head-input">
+      <div className={`position-relative w-75 ${openMenu ? "w-100" : ""}`}>
+        {openMenu && (
+          <div onClick={() => setopenMenu(false)} className={`go_back_icon`}>
+            <IoMdArrowRoundBack />
+          </div>
+        )}
+        <div
+          className={`head-input  ${
+            openMenu ? "d-block" : "d-none"
+          }  d-md-block`}
+        >
           <input
             type="text"
             placeholder="Type anywhere to search"
-            className="w-100"
+            className={`w-100 `}
           />
         </div>
-        <div className="search_icon">
+        <div
+          onClick={() => setopenMenu(true)}
+          className={`search_icon ${openMenu ? "d-none" : ""}`}
+        >
           <AiOutlineSearch />
         </div>
       </div>
-      <div className="bell_icon">
+      <div className={`bell_icon  ${openMenu ? "d-none" : ""}`}>
         <GoBell />
       </div>
-      <div>
+      <div className={` ${openMenu ? "d-none" : ""}`}>
         <div
           className="d-flex align-items-center gap-2"
           style={{ cursor: "pointer " }}
