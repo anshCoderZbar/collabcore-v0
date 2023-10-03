@@ -126,6 +126,10 @@ export const Onboarding = () => {
           </div>
         </div>
       </div>
+      <div className="d-flex justify-content-between align-items-center onpage_btm w-100">
+        <p className="copyright">© {new Date().getFullYear()} CollabCore</p>
+        <p className="privacy_policy">Privacy Policy</p>
+      </div>
     </div>
   );
 };
