@@ -21,7 +21,7 @@ export const DashboardCardData = [
 
 export const Notifications = [
   {
-    date: "20-09-2023",
+    date: "3-10-2023",
     heading: "<strong>Forever 21</strong> marked your sponsored post project",
     unread: true,
     img: require("app/assets/logo1.png"),

@@ -31,9 +31,11 @@ export const Notification = () => {
     };
   });
 
+  console.log(groupByDate);
+
   return (
     <>
-      {groupByDate?.map((data) => {
+      {groupByDate?.map((data, i) => {
         let dateTxt = data?.date;
         if (data?.date === today) {
           dateTxt = "Today";
@@ -43,13 +45,13 @@ export const Notification = () => {
           dateTxt = data?.date;
         }
         return (
-          <>
+          <div key={i}>
             <div className="date">
               <span>{dateTxt}</span>
             </div>
             {data?.elm?.map((elm, i) => {
               return (
-                <div key={i} className={`notification_wrapper `}>
+                <div key={i} className="notification_wrapper">
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center notification_details">
                       {elm?.img && <img src={elm?.img} alt="logo" />}
@@ -63,7 +65,7 @@ export const Notification = () => {
                 </div>
               );
             })}
-          </>
+          </div>
         );
       })}
     </>

@@ -11,7 +11,7 @@ export const OfferContract = ({ setIsOpen, isOpen }) => {
           <input type="number" placeholder="$5" />
           <span>and an additional</span>
           <select className="form-select" aria-label="Default select example">
-            <option selected>0 days</option>
+            <option value="0">0 days</option>
             <option value="1">1 days</option>
             <option value="2">2 days</option>
             <option value="3">3 days</option>
