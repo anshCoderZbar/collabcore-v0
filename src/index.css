@@ -6,6 +6,7 @@
   --main-bg-color: #fff;
   --red-100: #f0dfdf;
   --red-500: #8f1414;
+  --secondary-bg-light: #f1f1f1;
   --green-100: #ebfdf3;
   --green-300: #b0f0c9;
   --green-400: #05ab5d;
@@ -18,14 +19,18 @@
   --blue-900: #3f4660;
   --gray-50: #eaeaea;
   --gray-100: #fafafa;
+  --gray-150: #e6e6e6;
   --gray-200: #dddddd;
+  --gray-250: #dcdcde;
   --gray-300: #9e9e9e;
   --gray-400: #9f9f9f;
   --gray-500: #a9a9a9;
+  --gray-550: #7f7d83;
   --gray-600: #667085;
   --gray-700: #4f4d55;
   --gray-800: #464646;
   --gray-900: #252525;
+  --gray-950: #0a090b;
 }
 :root[data-applied-mode="dark"] {
   color-scheme: dark;
