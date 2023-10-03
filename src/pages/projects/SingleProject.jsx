@@ -240,7 +240,6 @@ export const SingleProject = () => {
                       <a
                         href={pdf}
                         target="_blank"
-                        without
                         rel="noreferrer"
                         className="pdf_view"
                       >
@@ -262,7 +261,6 @@ export const SingleProject = () => {
                       <a
                         href={pdf}
                         target="_blank"
-                        without
                         rel="noreferrer"
                         className="pdf_view"
                       >

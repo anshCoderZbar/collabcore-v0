@@ -107,12 +107,10 @@ export const UserProfile = () => {
                   <img src={pdfIcon} alt="pdf icon" width={40} />
                 </div>
                 <div className="pdf_details_vs">
-                  {/* <p> {pdf?.length>=15?pdf.slice(0,15)+"...":pdf}</p> */}
                   <p> {pdf}</p>
                   <a
                     href={pdf}
                     target="_blank"
-                    without
                     rel="noreferrer"
                     className="pdf_view"
                   >
@@ -132,7 +130,6 @@ export const UserProfile = () => {
                   <a
                     href={pdf}
                     target="_blank"
-                    without
                     rel="noreferrer"
                     className="pdf_view"
                   >

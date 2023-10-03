@@ -116,7 +116,6 @@ export const ChatRoom = () => {
                     <a
                       href="#"
                       target="_blank"
-                      without
                       rel="noreferrer"
                       className="d-block"
                     >
