@@ -278,6 +278,12 @@
 .menu ul li a i {
   font-size: 1.2em;
 }
+.dashboard_active {
+  transform: translateX(0%);
+}
+.calander_page {
+  overflow: hidden;
+}
 
 /* profile menu */
 
@@ -343,10 +349,12 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 }
-
-.dashboard_active {
-  transform: translateX(0%);
-}
-.calander_page {
-  overflow: hidden;
+@media only screen and (max-width: 767px) {
+  .search_icon {
+    position: relative;
+  }
+  .go_back_icon {
+    position: absolute;
+    z-index: 99;
+  }
 }
