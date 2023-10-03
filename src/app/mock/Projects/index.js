@@ -1,4 +1,5 @@
 import { AiOutlineCheck } from "react-icons/ai";
+import { BiDotsVerticalRounded } from "react-icons/bi";
 
 export const TableColumns = [
   {
@@ -41,6 +42,11 @@ export const TableColumns = [
   {
     name: "Type",
     selector: (row) => row.type,
+  },
+  {
+    cell: (row) => <BiDotsVerticalRounded row={row} />,
+    allowOverflow: true,
+    button: true,
   },
 ];
 

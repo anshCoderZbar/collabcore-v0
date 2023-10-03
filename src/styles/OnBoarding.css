@@ -21,10 +21,12 @@
 }
 
 .onboard_steps button {
-  color: #a5a5a5;
+  color: var(--gray-450);
+  font-family: "Inter", sans-serif;
   background: none;
   border: none;
   font-weight: 500;
+  letter-spacing: -0.05px;
 }
 
 .onboard_steps span {
@@ -36,15 +38,23 @@
 .onboard_btn_active {
   color: #112232 !important;
 }
-.form-select {
+.form_onboard {
   width: 30rem !important;
   border: 1px solid #e6e6e6 !important;
+  padding: 12px 8px 12px 12px !important;
   font-size: 14px !important;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-550) !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.05px !important;
+  box-shadow: 0px 1.5px 4px -1px #0a090b12 !important;
 }
-.form-select :focus {
+.form_onboard:focus {
   outline: none !important;
   border: 1px solid #e6e6e6 !important;
 }
+
 .setup_acc {
   display: flex;
   justify-content: center;
@@ -53,15 +63,22 @@
 }
 
 .setup_container h2 {
+  font-family: "Inter", sans-serif;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
   margin-bottom: 50px;
   text-align: center;
+  line-height: 38.4px;
+  letter-spacing: -0.96px;
 }
 
 .setup-sub-head {
-  color: #4f4d55;
+  color: var(--gray-700);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.18px;
   text-align: center;
   font-size: 16px;
 }
@@ -72,17 +89,23 @@
 
 .input_onb {
   border: 1px solid #e6e6e6 !important;
-  padding: 10px !important;
+  padding: 12px !important;
   font-size: 14px !important;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
 }
 
 .input_onb:focus {
-  box-shadow: none !important;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
   outline: none !important;
   border: 1px solid #e6e6e6 !important;
 }
 .input_onb::placeholder {
   font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-550) !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.05px !important;
 }
 
 .guZdik {
@@ -119,6 +142,8 @@ form input[type="submit"] {
   border: none;
   border-radius: 6px;
   font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1199px) {
@@ -172,7 +197,7 @@ form input[type="submit"] {
 }
 
 @media screen and (max-width: 767px) {
-  .form-select {
+  .form_onboard {
     width: 100% !important;
     border: 1px solid #e6e6e6 !important;
   }
