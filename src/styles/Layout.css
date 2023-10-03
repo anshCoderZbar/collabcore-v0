@@ -242,7 +242,7 @@
   z-index: -1;
 }
 
-.menu.dropdown_active {
+.dropdown_active {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -279,7 +279,7 @@
   font-size: 1.2em;
 }
 .dashboard_active {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 .calander_page {
   overflow: hidden;
