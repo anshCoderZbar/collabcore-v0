@@ -33,6 +33,16 @@ export const Users = () => {
       <div className="messages-page__header mb-0 px-4 pt-3 pb-3">
         <span className="messages-page__title">Messages</span>
       </div>
+      <div className="px-4">
+        <div class="radio_container">
+          <input type="radio" name="radio" id="recent" checked={true} />
+          <label htmlFor="recent">Recent</label>
+          <input type="radio" name="radio" id="requests" />
+          <label htmlFor="requests">Requests</label>
+          <input type="radio" name="radio" id="archive" />
+          <label htmlFor="archive">Archive</label>
+        </div>
+      </div>
       <ul className="messages-page__list p-0">
         {filterUser?.map((el, i) => {
           return (
