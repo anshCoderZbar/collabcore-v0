@@ -13,6 +13,9 @@ import { useToken } from "lib/utils/UseToken";
 import { useNavigate } from "react-router-dom";
 
 export const Onboarding = () => {
+  useEffect(() => {
+    document.documentElement.setAttribute("data-applied-mode", "light");
+  }, []);
   const navigate = useNavigate();
   const fileTypes = ["JPG", "PNG", "GIF"];
   const [file, setFile] = useState(null);
@@ -64,7 +67,10 @@ export const Onboarding = () => {
           <h2>Setup your account</h2>
           <div className="setup_select">
             <p className="setup-sub-head">What best describes you?</p>
-            <select className="form-select" {...register("select")}>
+            <select
+              className="form-select form_onboard"
+              {...register("select")}
+            >
               <option value="">Creator/Influencer/Model</option>
               <option value="creator">Creator</option>
               <option value="influencer">Influencer</option>
@@ -119,6 +125,10 @@ export const Onboarding = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div className="d-flex justify-content-between align-items-center onpage_btm w-100">
+        <p className="copyright">© {new Date().getFullYear()} CollabCore</p>
+        <p className="privacy_policy">Privacy Policy</p>
       </div>
     </div>
   );
